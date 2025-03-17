@@ -1,0 +1,163 @@
+* {
+  font-family: 'League Spartan', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url(images/image.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  width: 100vw;
+}
+
+.nav {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+.options a {
+  color: inherit;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  line-height: 28px;
+  font-size: 18px;
+}
+
+hr {
+  color: gray;
+}
+.main {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main h1 {
+  font-size: 56px;
+  font-weight: bold;
+  max-width: 635px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.work {
+  display: flex;
+
+  justify-content: space-between;
+}
+
+.left-work {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-last {
+  display: none;
+}
+.left-work img {
+  margin-left: 100px;
+  margin-top: 40px;
+}
+
+.right-work {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  text-align: end;
+  margin: 30px;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.right-work img {
+  margin-top: 40px;
+  width: 60vw;
+}
+.content-1,
+.content-2,
+.content-3,
+.content-4,
+.content-5,
+.footer {
+  max-width: 100vw;
+  text-align: center;
+}
+
+.content-1 img {
+  max-width: 90vw;
+}
+.content-2 img {
+  max-width: 90vw;
+}
+
+.content-3 img {
+  max-width: 90vw;
+}
+.content-4 img {
+  max-width: 90vw;
+}
+
+.content-5 img {
+  max-width: 90vw;
+  margin-bottom: 100px;
+}
+
+.footer img {
+  max-width: 90vw;
+}
+
+@media (max-width: 800px) {
+  .nav-logo img {
+    max-width: 150px;
+  }
+
+  .options {
+    display: none;
+  }
+  .work {
+    flex-direction: column;
+  }
+  .left-work {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .left-work img {
+    max-width: 100px;
+    margin: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .left-work img:last-child {
+    display: none;
+  }
+
+  .right-work img {
+    width: 90vw;
+    margin: auto;
+  }
+  .nav img {
+    display: inline;
+  }
+
+  .main h1 {
+    font-size: 35px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .content-5 img {
+    margin-bottom: 0;
+  }
+}
